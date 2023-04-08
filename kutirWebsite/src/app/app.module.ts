@@ -7,11 +7,13 @@ import { ContextMenuModule } from 'primeng/contextmenu';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { AboutComponent } from './about/about.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     BrowserAnimationsModule,
     ButtonModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
